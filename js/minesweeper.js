@@ -12,6 +12,20 @@
  * https://en.wikipedia.org/wiki/Minesweeper_(video_game)
  */
 
+ // preload images
+if (document.images) {
+  var images = ["1.png", "2.png", "3.png",
+                "4.png", "5.png", "6.png",
+                "7.png", "8.png", "mine.png",
+                "revealed.png", "hidden.png",
+                "flag.png", "question.png"];
+
+  for (var i = 0; i < images.length; i++) {
+    var img = new Image();
+    img.src = images[i];
+  }
+}
+
 // Global variables
 let board;
 let clockInterval;
