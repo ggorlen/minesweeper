@@ -10,6 +10,30 @@ body {
   background: url("assets/wallpaper.png");
 }
 
+/* preload images https://stackoverflow.com/a/14390213/6243352 */
+body::after {
+  position: absolute; 
+  width: 0; 
+  height: 0; 
+  overflow: hidden; 
+  z-index: -1; 
+  content: url("assets/revealed.png") 
+           url("assets/1.png")
+           url("assets/2.png")
+           url("assets/3.png")
+           url("assets/4.png")
+           url("assets/5.png")
+           url("assets/6.png")
+           url("assets/7.png")
+           url("assets/8.png")
+           url("assets/mine.png")
+           url("assets/help.png")
+           url("assets/flag.png")
+           url("assets/question.png")
+           url("assets/hidden.png")
+  ;
+}
+
 input { 
   text-align: right; 
 }
